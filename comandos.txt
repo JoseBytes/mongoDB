@@ -1,0 +1,12 @@
+# Eliminar un Documento de la coleccion
+db.usuarios.deleteOne({"id": "1"})
+
+# Listar base de datos con colecciones
+db.usuarios.find().pretty() / o sin la funcion .pretty()
+
+# Insertar coleccion (Por defecto se crea la base de Datos USUARIOS si no esta creada)
+db.usuarios.insert({"id":"1", "username":"lizangel", "password":"123456", "nombre":"Lizangel Darlin", "apellido":"Lujan Lopez"})
+
+# Modificar elementos de una coleccion
+db.usuarios.update({"id":"1"},{$set: {"apellido": "Lopez Zambrano"} })
+
